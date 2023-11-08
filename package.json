@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "set NODE_ENV=development&&nodemon server.js",
     "start:prod": "set NODE_ENV=production&&node server.js"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RAHULKUMARNATHU/book-api.git"
@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/RAHULKUMARNATHU/book-api#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.2.0",
     "mongoose": "^8.0.0"
   }
