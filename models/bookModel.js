@@ -3,14 +3,19 @@ const mongoose = require("mongoose");
 const bookSchema = new mongoose.Schema({
   title: {
     type: String,
-    require: [true, "A book must have a title"],
+    required: [true, "A book must have a title"],
+    unique: [true, "Already created"],
   },
   author: {
     type: String,
-    require: [true, "A book must have an author"],
+    required: [true, "A book must have an author"],
   },
   summary: {
     type: String,
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now(),
   },
 });
 
