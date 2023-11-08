@@ -1,6 +1,12 @@
 const app =require('./app')
 
-const port = 8000 || process.env.port;
+process.on("uncaughtException", (err) => {
+  console.log("UNCAUGHT EXCEPTION !  💥 Shutting down... ");
+  console.log(err.name, ":", err.message);
+  process.exit(1);
+});
+
+const port = 8000 || process.env.PORT;
 
 app.listen(port, (err) => {
   if (err) {
