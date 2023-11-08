@@ -4,8 +4,9 @@
   "description": "this is the basic api for a user to perform a basic crud operations on book.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "start:dev": "set NODE_ENV=development&&nodemon server.js",
+    "start:prod": "set NODE_ENV=production&&node server.js"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RAHULKUMARNATHU/book-api.git"
