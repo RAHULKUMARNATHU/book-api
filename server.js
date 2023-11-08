@@ -1,4 +1,5 @@
 const app =require('./app')
+const db = require("./config/mongoose");
 
 process.on("uncaughtException", (err) => {
   console.log("UNCAUGHT EXCEPTION !  💥 Shutting down... ");

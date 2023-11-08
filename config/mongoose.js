@@ -5,7 +5,6 @@ const mongoose = require("mongoose");
 
 let DB;
 
-console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV === "production") {
   DB = process.env.DATABASE;
 } else {
@@ -15,7 +14,7 @@ if (process.env.NODE_ENV === "production") {
 
 const db = mongoose
   .connect(DB, {
-    useNewUrlParser: true,
+    // useNewUrlParser: true,
   })
   .then(() => {
     console.log("DB connected successfully");

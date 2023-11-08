@@ -1,5 +1,4 @@
 const express = require("express");
-const db = require("./config/mongoose");
 const dotenv = require("dotenv");
 const globalErrorHandler = require("./controllers/errorController");
 const AppError = require("./utils/appError");
